@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>👰🤵 Nuestra boda</title>
+</head>
+
+
+<body>
+
+<!-- El modal -->
+<div id="myModal" class="modal">
+    <div class="modal-background hidden" id="modalBackground"></div>
+    <!-- Contenido del modal -->
+    <div class="modal-content">
+        <img src="img/Invitation.svg" alt="Invitation.svg" height="100px">
+        <p class="title cursiva">Has recibido una invitación.</p>
+        <button onclick="playAudioAndClose()">Aceptar</button>
+    </div>
+</div>
+
+    <header>
+        <div class="portada">
+            <div class="overlay"></div>
+            <h1 class="cursiva">Nuestra boda</h1>
+            <p class="sub-title font-bold">Wendy Morales & Julio Flores</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="music">
+            <img src="img/Disco.jpg" alt="Portada de disco">
+            <div class="info">
+                <h4 class="artist-name">John Legend</h4>
+                <p class="song-name">All of Me</p>
+            </div>
+            <div class="player">
+                <audio id="audio-player" controls loop>
+                    <source src="Musica.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </section>
+
+        <section class="invitation">
+            <h2 class=" title cursiva">¡Estás invitado!</h2>
+            <p class="sub-title-2">Queremos que seas parte de este momento tan especial.</p>
+            <br><br>
+            <p>Tiempo restante</p>
+            <div class="countdown">
+                <div class="circle" id="days">
+                    <span id="daysValue">...</span>
+                    <span class="label uppercase">Dias</span>
+                </div>
+                <div class="circle" id="hours">
+                    <span id="hoursValue">...</span>
+                    <span class="label uppercase">Horas</span>
+                </div>
+                <div class="circle" id="minutes">
+                    <span id="minutesValue">...</span>
+                    <span class="label uppercase">Minutos</span>
+                </div>
+                <div class="circle" id="seconds">
+                    <span id="secondsValue">...</span>
+                    <span class="label uppercase">Segundos</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="ceremony">
+            <img src="img/Anillos.svg" alt="Anillos" height="80px">
+            <h3 class="uppercase sub-title">Ceremonia</h3>
+            <p class="sub-title-3">Hotel Palma Real Área de Playa</p>
+            <div class="date">
+                <p class="uppercase sub-title">10 <b>Jun</b></p>
+                <div class="vertical-line"></div>
+                <p class="sub-title">19:00 <b class="sub-title-3">PM</b></p>
+            </div>
+            <div class="line"></div>
+
+
+            <img src="img/Celebracion.svg" alt="Celebracion.svg" height="80px">
+            <h3 class="uppercase sub-title">Celebración</h3>
+            <p class="sub-title-3">Hotel Palma Real Salón Arrecife 2</p>
+            <div class="date">
+                <p class="uppercase sub-title">10 <b>Jun</b></p>
+                <div class="vertical-line"></div>
+                <p class="sub-title">19:00 <b class="sub-title-3">PM</b></p>
+            </div>
+
+            <div class="center-btn">
+                <a href="https://maps.app.goo.gl/9HT1vAtaHpM7NnXGA?g_st=iw" target="_blank" class="button"><img
+                        src="img/Ubicacion.svg" alt="Ubicacion" width="16" height="16">Ver Ubicación</a>
+            </div>
+        </section>
+
+
+        <section class="dresscode">
+            <img src="img/Dresscode.svg" alt="Dresscode" height="80px">
+            <h3 class="uppercase sub-title"> Vestimenta </h3>
+            <p class="sub-title-3">Formal · No niños \n Hola</p>
+        </section>
+
+
+
+        <section class="confirmation">
+            <h3 class="uppercase sub-title">Confirmar asistencia</h3>
+            <p class="sub-title-3">Por favor, confirma tu asistencia mandandome un mensaje de WhatsApp</p>
+            <div class="center-btn">
+                <a href="https://wa.me/xxx" target="_blank" class="button"><img src="img/WhatsApp.svg"
+                        alt="Icono" width="16" height="16">Mandar mensaje</a>
+            </div>
+        </section>
+
+
+        <section class="waiting">
+            <h2 class="title cursiva">¡Te esperamos!</h2>
+            <p class="sub-title-2">Wendy Morales & Julio Flores</p>
+            <p>No vestir de color azul marino o blanco</p>
+        </section>
+    </main>
+
+    <footer>
+        <img src="img/Regalo.svg" alt="Regalo.svg" height="40px">
+        <p class="sub-title-3">Su presencia es nuestro mejor regalo, sin embargo, si desea obsequiarnos algo más,
+            agradecemos lo haga en efectivo.</p>
+        <div class="background"></div>
+
+    </footer>
+</body>
+
+</html>
+
+<script src="script.js"></script>
