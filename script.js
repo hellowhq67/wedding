@@ -1,3 +1,21 @@
+
+function updateCountdown() {
+    const targetDate = new Date("Jun 10, 2024 00:00:00").getTime();
+    const currentDate = new Date().getTime();
+    const difference = targetDate - currentDate;
+
+    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+    document.getElementById("daysValue").innerText = days;
+    document.getElementById("hoursValue").innerText = hours;
+    document.getElementById("minutesValue").innerText = minutes;
+    document.getElementById("secondsValue").innerText = seconds;
+}
+
+setInterval(updateCountdown, 1000);
 function playAudio() {
     var audio = document.getElementById('audio-player');
     audio.volume = 0.4;
